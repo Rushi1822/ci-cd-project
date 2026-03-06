@@ -3,27 +3,21 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                echo "Cloning Repository"
-            }
-        }
-
         stage('Build') {
             steps {
-                echo "Building Project"
+                echo 'Building the project'
             }
         }
 
         stage('Test') {
             steps {
-                echo "Testing Project"
+                echo 'Testing the project'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo "Deploying Project"
+                echo 'Deploying the project'
             }
         }
 
